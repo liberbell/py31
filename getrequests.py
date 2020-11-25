@@ -10,3 +10,5 @@ r_get = requests.get(url1)
 print(r_get.status_code)
 print(type(r_get))
 print(type(r_get.headers))
+
+pprint(r_get.headers)
