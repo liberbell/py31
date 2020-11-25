@@ -12,3 +12,6 @@ print(type(r_get))
 print(type(r_get.headers))
 
 pprint(r_get.headers)
+
+data = json.loads(r_get.text)
+pprint(data)
