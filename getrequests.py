@@ -7,4 +7,4 @@ print(requests.__copyright__)
 
 url1 = "https://www.metaweather.com/api/location/2487956/2020/11/24" 
 r_get = requests.get(url1)
-print(r_get)
+print(r_get.status_code)
