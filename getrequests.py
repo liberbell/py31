@@ -19,4 +19,8 @@ url1 = "https://www.metaweather.com/api/location/2487956/2020/11/24"
 # print(r_get.is_redirect)
 
 r_get = requests.get("https://swapi.dev/api/planets/3")
+print(r_get.status_code)
 pprint(r_get.text)
+
+data = json.loads(r_get.text)
+pprint(data)
