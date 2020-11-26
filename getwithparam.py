@@ -14,3 +14,6 @@ PARAM = {'q' : search_term}
 
 r_get = requests.get(url=URL, params=PARAM)
 print(r_get.status_code)
+print(r_get.url)
+
+webbrowser.open(r_get.url)
