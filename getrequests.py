@@ -17,3 +17,6 @@ data = json.loads(r_get.text)
 pprint(data)
 
 print(r_get.is_redirect)
+
+r_get = requests.get("https://swapi.dev/api/planets/3")
+pprint(r_get.text)
