@@ -22,3 +22,4 @@ r_post = requests.post("https://en.wikipedia.org/w/index.php", data = {'search' 
 
 url = "https://httpbin.org/post"
 files = {"files": open("test.txt", "rb")}
+value = {"upload_file" : "test.txt", "OUT" : "csv"}
