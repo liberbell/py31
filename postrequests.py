@@ -28,3 +28,4 @@ print(files)
 
 r_post = requests.post(url, files=files, data=values)
 print(r_post.status_code)
+print(r_post.url)
