@@ -10,3 +10,4 @@ print(r_put.status_code)
 # print(r_put.text)
 
 r_option = requests.options(URL2)
+print(type(r_option))
