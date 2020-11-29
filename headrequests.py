@@ -9,3 +9,4 @@ print(r_head.content)
 
 pprint(r_head.headers)
 pprint(r_head.headers['Content-Length'])
+pprint(r_head.headers['content-type'])
