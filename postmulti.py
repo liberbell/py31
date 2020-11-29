@@ -13,3 +13,9 @@ parameters = {
     'api_paste_code': payload,
     'api_paste_format': 'python'
 }
+
+r_post = requests.post(post_link, data=parameters)
+
+if (r_post.status_code == 200):
+    print("The request to the URL was successful.")
+    print("You can find the code pasted on this link: {}".format(r_post.text))
