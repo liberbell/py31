@@ -12,3 +12,5 @@ print(r_put.status_code)
 r_option = requests.options(URL2)
 print(type(r_option))
 print(r_option.text)
+
+pprint(r_option.headers)
