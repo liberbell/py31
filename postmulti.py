@@ -22,3 +22,5 @@ if (r_post.status_code == 200):
 
 else:
     print("The request was not successful.")
+
+webbrowser.open(r_post.text)
