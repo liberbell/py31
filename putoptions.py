@@ -19,3 +19,5 @@ pprint(r_option.headers)
 r_delete = requests.delete(URL3)
 print(r_delete.status_code)
 print(type(r_delete))
+
+print(r_delete.text)
