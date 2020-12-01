@@ -10,3 +10,8 @@ print(resp.status_code)
 print(type(resp))
 print(resp.headers)
 print(resp.headers['content-type'])
+
+url2 = "https://en.wikipedia.org/wiki/Monty_Python"
+resp_obj = requests.get(url2)
+
+print(resp_obj.headers)
