@@ -15,3 +15,4 @@ url2 = "https://en.wikipedia.org/wiki/Monty_Python"
 resp_obj = requests.get(url2)
 
 print(resp_obj.headers)
+print(resp_obj.request.headers)
