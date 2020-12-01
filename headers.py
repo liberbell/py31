@@ -8,3 +8,4 @@ resp = requests.get(url, headers = header1)
 
 print(resp.status_code)
 print(type(resp))
+print(resp.headers)
