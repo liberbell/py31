@@ -9,3 +9,8 @@ print(type(resp_obj))
 
 pprint(resp_obj.json())
 print(resp_obj.headers["content-type"])
+
+url2 = "https://www.yahoo.com"
+resp = requests.get(url2)
+print(resp.status_code)
+print(resp.headers["content-type"])
