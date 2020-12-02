@@ -21,3 +21,7 @@ from io import BytesIO
 
 url = "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Moon_and_Aurora.jpg/320px-Moon_and_Aurora.jpg"
 url2 = "https://upload.wikimedia.org/wikipedia/commons/4/4c/Moon_and_Aurora.jpg"
+
+resp = requests.get(url)
+print(resp.status_code)
+print(resp.content)
