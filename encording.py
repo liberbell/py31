@@ -18,3 +18,6 @@ pprint(resp_obj.text)
 
 from PIL import Image
 from io import BytesIO
+
+url = "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Moon_and_Aurora.jpg/"
+url2 = "https://upload.wikimedia.org/wikipedia/commons/4/4c/Moon_and_Aurora.jpg"
