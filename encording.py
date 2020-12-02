@@ -15,3 +15,6 @@ print(resp_obj.encoding)
 pprint(resp_obj.text)
 resp_obj.encoding = "ISO-8859-1"
 pprint(resp_obj.text)
+
+from PIL import Image
+from io import BytesIO
