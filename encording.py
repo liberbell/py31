@@ -25,3 +25,5 @@ url2 = "https://upload.wikimedia.org/wikipedia/commons/4/4c/Moon_and_Aurora.jpg"
 resp = requests.get(url)
 print(resp.status_code)
 print(type(resp.content))
+
+image = Image.open(BytesIO(resp.content))
