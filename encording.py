@@ -29,4 +29,5 @@ print(type(resp.content))
 image = Image.open(BytesIO(resp.content))
 print(type(image))
 
-image.save("aurora.jpg")
+# image.save("aurora.jpg")
+Image.open("aurora.jpg")
