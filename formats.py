@@ -14,3 +14,8 @@ url2 = "https://www.yahoo.com"
 resp = requests.get(url2)
 print(resp.status_code)
 print(resp.headers["content-type"])
+
+url3 = "https://maps.googleapis.com/maps/api/geocode/json"
+resp_obj = requests.get(url3)
+print(resp_obj.status_code)
+print(resp_obj.headers["content-type"])
