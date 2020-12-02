@@ -8,3 +8,4 @@ print(resp_obj.status_code)
 print(type(resp_obj))
 
 pprint(resp_obj.json())
+print(resp_obj.headers["content-type"])
