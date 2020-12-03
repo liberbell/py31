@@ -25,3 +25,4 @@ url4 = "https://swapi.dev/api/vehicles/4/"
 resp_obj = requests.get(url4, stream=True)
 print(resp_obj.status_code)
 print(resp_obj.raw)
+print(resp_obj.raw.read(10))
