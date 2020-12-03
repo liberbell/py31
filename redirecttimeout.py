@@ -14,3 +14,4 @@ if resp1.history:
         print(resp.status_code, resp.url)
     
     print("\nFinal destination:")
+    print(resp1.status_code, resp1.url)
