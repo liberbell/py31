@@ -6,6 +6,7 @@ ok_resp = requests.get(url1)
 
 print(ok_resp.status_code)
 print(ok_resp.ok)
+print(ok_resp.raise_for_status())
 
 url2 = "https://www.yahoo.com/alf2adfd5"
 bad_resp = requests.get(url2)
