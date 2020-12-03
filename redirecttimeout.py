@@ -12,3 +12,5 @@ if resp1.history:
     print("Redirect history:")
     for resp in resp1.history:
         print(resp.status_code, resp.url)
+    
+    print("\nFinal destination:")
