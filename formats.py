@@ -18,7 +18,7 @@ print(resp.headers["content-type"])
 url3 = "https://maps.googleapis.com/maps/api/geocode/json"
 resp_obj = requests.get(url3)
 print(resp_obj.status_code)
-print(resp_obj.headers["content-type4"])
+print(resp_obj.headers["content-type"])
 print(resp_obj.json())
 
 url4 = "https://swapi.dev/api/vehicles/4/"
