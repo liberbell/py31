@@ -9,6 +9,8 @@ print(ok_resp.ok)
 print(ok_resp.raise_for_status())
 print(ok_resp.headers)
 print(type(ok_resp.headers))
+pprint(ok_resp.headers)
+print(ok_resp.headers["content-type"])
 
 url2 = "https://www.yahoo.com/alf2adfd5"
 bad_resp = requests.get(url2)
