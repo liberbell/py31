@@ -15,3 +15,7 @@ if resp1.history:
     
     print("\nFinal destination:")
     print(resp1.status_code, resp1.url)
+
+else:
+    print("Request was not redirected:")
+    print(resp1.status_code, resp1.url)
