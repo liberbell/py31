@@ -11,6 +11,7 @@ print(ok_resp.headers)
 print(type(ok_resp.headers))
 pprint(ok_resp.headers)
 print(ok_resp.headers["content-type"])
+print(ok_resp.headers.get("content-type"))
 
 url2 = "https://www.yahoo.com/alf2adfd5"
 bad_resp = requests.get(url2)
