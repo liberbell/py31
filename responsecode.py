@@ -12,3 +12,4 @@ bad_resp = requests.get(url2)
 
 print(bad_resp.status_code)
 print(bad_resp.ok)
+print(bad_resp.raise_for_status())
