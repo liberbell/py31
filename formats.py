@@ -27,7 +27,7 @@ print(resp_obj.status_code)
 print(resp_obj.raw)
 print(resp_obj.raw.read(10))
 
-with requests.get(url4, stream=True) as response:
-    with open("raw_file.tst", "wb") as b:
-        for chunk in response.iter_content(1000):
-            b.write(chunk)
+# with requests.get(url4, stream=True) as response:
+#     with open("raw_file.tst", "wb") as b:
+#         for chunk in response.iter_content(1000):
+#             b.write(chunk)
