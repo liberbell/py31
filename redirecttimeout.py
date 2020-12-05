@@ -20,3 +20,5 @@ if resp1.history:
 else:
     print("Request was not redirected:")
     print(resp1.status_code, resp1.url)
+
+print(resp1.is_redirect)
