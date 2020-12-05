@@ -27,4 +27,7 @@ print(resp1.is_permanent_redirect)
 print(resp1.history[0].is_redirect)
 
 resp2 = requests.get(url3, allow_redirects=False)
-print(res2.status_code)
+print(resp2.status_code)
+print(resp2.history)
+
+resp_head = requests.head(url3, allow_redirects=True)
