@@ -23,3 +23,4 @@ else:
 
 print(resp1.is_redirect)
 print(resp1.is_permanent_redirect)
+print(resp1.history[0].is_redirect)
