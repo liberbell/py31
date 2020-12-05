@@ -3,6 +3,7 @@ from pprint import pprint
 
 url1 = "https://gmail.com"
 url2 = "https://www.yahoo.co.jp"
+url3 = "https:/google.com"
 
 resp1 = requests.get(url1)
 print(resp1.status_code)
@@ -24,3 +25,5 @@ else:
 print(resp1.is_redirect)
 print(resp1.is_permanent_redirect)
 print(resp1.history[0].is_redirect)
+
+resp2 = requests.get(url3, allow_redirects=False)
