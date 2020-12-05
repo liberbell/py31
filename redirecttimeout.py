@@ -3,7 +3,7 @@ from pprint import pprint
 
 url1 = "https://gmail.com"
 url2 = "https://www.yahoo.co.jp"
-url3 = "https:/google.com"
+url3 = "https://google.com"
 
 resp1 = requests.get(url1)
 print(resp1.status_code)
