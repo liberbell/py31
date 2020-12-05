@@ -31,3 +31,5 @@ print(resp2.status_code)
 print(resp2.history)
 
 resp_head = requests.head(url3, allow_redirects=True)
+print(resp2.status_code)
+print(resp2.history)
