@@ -4,6 +4,7 @@ from pprint import pprint
 url1 = "https://gmail.com"
 url2 = "https://www.yahoo.co.jp"
 url3 = "https://google.com"
+url4 = "https://github.com"
 
 resp1 = requests.get(url1)
 print(resp1.status_code)
@@ -33,3 +34,7 @@ print(resp2.history)
 resp_head = requests.head(url3, allow_redirects=True)
 print(resp_head.status_code)
 print(resp_head.history)
+
+resp3 = requests.get(url4, timeout=0.001)
+print(resp3.status_code)
+print(resp3.history)
