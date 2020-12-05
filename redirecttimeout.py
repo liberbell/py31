@@ -22,3 +22,4 @@ else:
     print(resp1.status_code, resp1.url)
 
 print(resp1.is_redirect)
+print(resp1.is_permanent_redirect)
