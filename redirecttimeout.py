@@ -4,7 +4,7 @@ from pprint import pprint
 url1 = "https://gmail.com"
 url2 = "https://www.yahoo.co.jp"
 
-resp1 = requests.get(url2)
+resp1 = requests.get(url1)
 print(resp1.status_code)
 print(resp1.history)
 print(resp1.url)
