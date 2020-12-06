@@ -7,13 +7,13 @@ url2 = "https://github.com"
 
 # resp1 = requests.get(url1)
 
-try:
-    requests.get(url1)
-except exceptions.ConnectionError:
-    print("Error: Connection error")
+# try:
+#     requests.get(url1)
+# except exceptions.ConnectionError:
+#     print("Error: Connection error")
 
 # resp2 = requests.get(url2, timeout=0.001)
 try:
-    requests.get(url2)
+    requests.get(url2, timeout=0.001)
 except exceptions.ConnectTimeout:
     print("Error: Timeout")
