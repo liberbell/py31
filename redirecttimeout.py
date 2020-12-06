@@ -35,6 +35,10 @@ resp_head = requests.head(url3, allow_redirects=True)
 print(resp_head.status_code)
 print(resp_head.history)
 
-resp3 = requests.get(url4, timeout=0.001)
-print(resp3.status_code)
-print(resp3.history)
+# resp3 = requests.get(url4, timeout=0.001)
+# print(resp3.status_code)
+# print(resp3.history)
+
+resp4 = requests.get(url4, timeout=(5, 18))
+print(resp4.status_code)
+print(resp4.history)
