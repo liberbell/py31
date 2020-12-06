@@ -41,4 +41,6 @@ print(resp_head.history)
 
 resp4 = requests.get(url4, timeout=(5, 18))
 print(resp4.status_code)
-print(resp4.history)
+
+resp5 = requests.get(url4, timeout=None)
+print(resp5.status_code)
