@@ -12,4 +12,8 @@ try:
 except exceptions.ConnectionError:
     print("Error: Connection error")
 
-resp2 = requests.get(url2, timeout=0.001)
+# resp2 = requests.get(url2, timeout=0.001)
+try:
+    requests.get(url2)
+except exceptions.ConnectTimeout:
+    print("Error: Timeout")
